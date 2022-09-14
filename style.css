@@ -40,3 +40,19 @@ main {
 #evaluation-form select {
   width: 40%;
 }
+
+.actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.butoes-action {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+}
