@@ -17,3 +17,12 @@
   justify-content: space-between;
   flex-basis: 20%;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
