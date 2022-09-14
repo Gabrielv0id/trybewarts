@@ -30,8 +30,8 @@ Neste projeto, você vai desenvolver uma página de formulário da Escola de Mag
   <summary><strong>🗓 Data de Entrega</strong></summary><br />
 
 - Este projeto é em equipe
-- São `X` dias de projeto
-- Data para entrega regular do projeto: `21/09/2022 13:50`
+- Será `1` dia de projeto
+- Data para entrega regular do projeto: `21/09/2022 14:00`
 
 </details>
 
