@@ -33,6 +33,10 @@ main {
   height: 500px;
 }
 
-#input-lastname , #input-name {
-  width: 49%;
+#evaluation-form input {
+  width: 40%;
+}
+
+#evaluation-form select {
+  width: 40%;
 }
