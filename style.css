@@ -33,7 +33,7 @@ main {
   height: 500px;
 }
 
-#evaluation-form input {
+#input-name , #input-lastname , #input-email , #house {
   width: 40%;
 }
 
