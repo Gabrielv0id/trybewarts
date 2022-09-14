@@ -1,6 +1,8 @@
 const email = document.querySelector('#email');
 const senha = document.querySelector('#senha');
 const btnEntrar = document.querySelector('#botao-entrar');
+const btnSubmit = document.querySelector('#submit-btn');
+const agreement = document.querySelector('#agreement');
 
 function validarLogin(event) {
   event.preventDefault();
@@ -11,4 +13,15 @@ function validarLogin(event) {
   }
 }
 
+btnSubmit.disable = true;
 btnEntrar.addEventListener('click', validarLogin);
+
+function validacao() {
+  if (agreement.value === '') {
+    btnSubmit.disable = true;
+  } else {
+    btnSubmit.disable = false;
+  }
+}
+
+agreement.addEventListener('change', validacao);
