@@ -20,6 +20,7 @@
 
 main {
   display: flex;
+  justify-content: space-between;
 }
 
 #evaluation-form {
@@ -28,11 +29,10 @@ main {
   flex-direction: column;
 }
 
-aside {
-  display: flex;
-  justify-content: flex-end;
-}
-
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#input-lastname , #input-name {
+  width: 49%;
 }
