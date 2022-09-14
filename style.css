@@ -27,3 +27,12 @@ main {
   width: 675px;
   flex-direction: column;
 }
+
+aside {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
