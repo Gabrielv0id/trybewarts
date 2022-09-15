@@ -3,6 +3,7 @@ const senha = document.querySelector('#senha');
 const btnEntrar = document.querySelector('#botao-entrar');
 const btnSubmit = document.querySelector('#submit-btn');
 const agreement = document.querySelector('#agreement');
+const textArea = document.querySelector('#textarea');
 
 function validarLogin(event) {
   event.preventDefault();
@@ -13,15 +14,19 @@ function validarLogin(event) {
   }
 }
 
-btnSubmit.disable = true;
-btnEntrar.addEventListener('click', validarLogin);
-
 function validacao() {
-  if (agreement.value === '') {
-    btnSubmit.disable = true;
+  if (agreement.checked) {
+    btnSubmit.disabled = false;
   } else {
-    btnSubmit.disable = false;
+    btnSubmit.disabled = true;
   }
 }
 
-agreement.addEventListener('change', validacao);
+function contadorCaracter() {
+  const inputLength = textArea.value.length;
+  console.log(inputLength);
+}
+
+textArea.addEventListener('keypress', contadorCaracter);
+btnEntrar.addEventListener('click', validarLogin);
+agreement.addEventListener('click', validacao);
