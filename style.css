@@ -56,3 +56,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#counter {
+  display: flex;
+  justify-content: flex-end;
+}

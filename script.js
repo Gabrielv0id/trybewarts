@@ -4,6 +4,7 @@ const btnEntrar = document.querySelector('#botao-entrar');
 const btnSubmit = document.querySelector('#submit-btn');
 const agreement = document.querySelector('#agreement');
 const textArea = document.querySelector('#textarea');
+const contador = document.querySelector('#counter');
 
 function validarLogin(event) {
   event.preventDefault();
@@ -22,11 +23,15 @@ function validacao() {
   }
 }
 
-function contadorCaracter() {
+contador.innerHTML = 500;
+
+function contadorCaracter(event) {
+  const max = 500;
   const inputLength = textArea.value.length;
-  console.log(inputLength);
+  console.log(event.key);
+  contador.innerHTML = max - inputLength;
 }
 
-textArea.addEventListener('keypress', contadorCaracter);
+textArea.addEventListener('input', contadorCaracter);
 btnEntrar.addEventListener('click', validarLogin);
 agreement.addEventListener('click', validacao);
