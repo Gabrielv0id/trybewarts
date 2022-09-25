@@ -20,20 +20,22 @@
     
     <main>
       <form action="" id="evaluation-form">
-        <div>
-        <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
+        <div class='inputbox'>
+          <div>
+          <input type="text" id="input-name" placeholder="Nome">
+          <input type="text" id="input-lastname" placeholder="Sobrenome">
+          </div>
+          <div>
+          <input type="text" id="input-email" placeholder="Email">
+          <select name="house" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+          </div>
         </div>
-        <div>
-        <input type="text" id="input-email" placeholder="Email">
-        <select name="house" id="house">
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
-        </div>
-        <hr>
+        <hr class="distance">
         <div class="actions">
           <div class="butoes-action">
             <label  id="label-family">Qual sua família?</label>
@@ -49,27 +51,41 @@
           </div>
           <div>
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-          <input type="checkbox" class='subject' value="HoFs">HoFs
-          <input type="checkbox" class='subject' value="Jest">Jest
-          <input type="checkbox" class='subject' value="Promises">Promises
-          <input type="checkbox" class='subject' value="React">React
-          <input type="checkbox" class='subject' value="SQL">SQL
-          <input type="checkbox" class='subject' value="Python">Python
+          <div class="checkbox-style">
+            <label for="" class="check">
+              <input type="checkbox" class='subject' value="HoFs"> HoFs
+            </label>
+            <label for="" class="check">
+              <input type="checkbox" class='subject' value="Jest"> Jest
+            </label>
+            <label for="" class="check" id="two">
+             <input type="checkbox" class='subject' id='diferent'value="Promises"> Promises
+            </label>
+            <label for="" class="check">
+             <input type="checkbox" class='subject' value="React"> React
+            </label>
+            <label for="" class="check" id="one">
+              <input type="checkbox" class='subject' value="SQL"> SQL
+            </label>
+            <label for="" class="check">
+              <input type="checkbox" class='subject' value="Python"> Python
+            </label>
+          </div>
           </div>
         </div>
-        <hr>
+        <hr class="distance">
         <div>
           <label id="label-rate">Como você avalia a Trybewarts? </label>
-          <input type="radio" name="rate" value="1">1
-          <input type="radio" name="rate" value="2">2
-          <input type="radio" name="rate" value="3">3
-          <input type="radio" name="rate" value="4">4
-          <input type="radio" name="rate" value="5">5
-          <input type="radio" name="rate" value="6">6
-          <input type="radio" name="rate" value="7">7
-          <input type="radio" name="rate" value="8">8
-          <input type="radio" name="rate" value="9">9
-          <input type="radio" name="rate" value="10">10
+          <input type="radio" name="rate" class="rate" value="1"> 1
+          <input type="radio" name="rate" class="rate" value="2"> 2
+          <input type="radio" name="rate" class="rate" value="3"> 3
+          <input type="radio" name="rate" class="rate" value="4"> 4
+          <input type="radio" name="rate" class="rate" value="5"> 5
+          <input type="radio" name="rate" class="rate" value="6"> 6
+          <input type="radio" name="rate" class="rate" value="7"> 7
+          <input type="radio" name="rate" class="rate" value="8"> 8
+          <input type="radio" name="rate" class="rate" value="9"> 9
+          <input type="radio" name="rate" class="rate" value="10">10
         </div>
 
         <label class="textarea">Deixe seu comentário:</label>

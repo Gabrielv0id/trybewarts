@@ -4,11 +4,21 @@
   box-sizing: border-box;
 }
 
+body{
+  background-image: url(images/harry-potter-hogwarts-sunset-poster-art-5rssjskb830c7wal.jpeg);
+  background-size: 2000px;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
+  color: white;
+}
+
+.trybewarts-header-logo {
+  width: 80px;
 }
 
 .header form {
@@ -18,15 +28,36 @@
   flex-basis: 20%;
 }
 
+#email , #senha , #botao-entrar {
+  height: 30px;
+  margin: 0 5px;
+}
+
+#botao-entrar {
+  border-radius: 10%;
+  width: 100px;
+  background-color: white;
+  padding: 0;
+  border: 0;
+}
+
+#botao-entrar:hover {
+  background-color:rgb(39, 128, 111);
+}
+
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-top: 100px;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  padding: 30px;
+  border-radius: 5%;
+  background-color: rgb(50, 167, 145);
 }
 
 #trybewarts-forms-logo {
@@ -35,10 +66,32 @@ main {
 
 #input-name , #input-lastname , #input-email , #house {
   width: 40%;
+  margin: 5px;
 }
 
 #evaluation-form select {
   width: 40%;
+}
+
+.checkbox-style {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.check {
+  margin-right: 25%;
+}
+
+.distance {
+  margin: 20px 0;
+}
+
+#one {
+  margin-right: 27%;
+}
+
+#two {
+  margin-right: 16.5%;
 }
 
 .actions {
@@ -60,4 +113,12 @@ main {
 #counter {
   display: flex;
   justify-content: flex-end;
+}
+
+footer {
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
 }
