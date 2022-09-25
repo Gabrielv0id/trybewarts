@@ -60,6 +60,10 @@ main {
   background-color: rgb(50, 167, 145);
 }
 
+.inputbox {
+  margin-left: 80px;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
@@ -67,6 +71,7 @@ main {
 #input-name , #input-lastname , #input-email , #house {
   width: 40%;
   margin: 5px;
+  height: 30px;
 }
 
 #evaluation-form select {
